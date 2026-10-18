@@ -38,6 +38,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/compare/" className="text-sm hover:text-accent">
               Compare
             </Link>
+            <Link href="/theory/" className="text-sm hover:text-accent">
+              Theory
+            </Link>
           </nav>
         </header>
         <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10">
