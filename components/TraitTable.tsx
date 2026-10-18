@@ -10,8 +10,14 @@ export function TraitTable({ composers }: { composers: Composer[] }) {
           <tr>
             <th className="p-3 text-left font-medium text-muted" />
             {composers.map((composer) => (
-              <th key={composer.slug} className="p-3 text-left font-serif text-lg font-normal">
-                <Link href={`/composers/${composer.slug}/`} className="hover:text-accent">
+              <th
+                key={composer.slug}
+                className="p-3 text-left font-serif text-lg font-normal"
+              >
+                <Link
+                  href={`/composers/${composer.slug}/`}
+                  className="hover:text-accent"
+                >
                   {composer.name.split(" ").at(-1)}
                 </Link>
               </th>
@@ -21,10 +27,16 @@ export function TraitTable({ composers }: { composers: Composer[] }) {
         <tbody>
           {traitDimensions.map((dimension) => (
             <tr key={dimension} className="border-t border-line align-top">
-              <th className="p-3 text-left font-medium whitespace-nowrap">{traitLabels[dimension]}</th>
+              <th className="p-3 text-left font-medium whitespace-nowrap">
+                {traitLabels[dimension]}
+              </th>
               {composers.map((composer) => (
                 <td key={composer.slug} className="p-3 leading-relaxed">
-                  {composer.signatureTraits.find((trait) => trait.dimension === dimension)?.description}
+                  {
+                    composer.signatureTraits.find(
+                      (trait) => trait.dimension === dimension,
+                    )?.description
+                  }
                 </td>
               ))}
             </tr>

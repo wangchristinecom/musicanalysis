@@ -93,8 +93,17 @@ V:B clef=bass
     },
   ],
   listening: [
-    { work: "Messiah, HWV 56", note: "Choruses alternate block-chord declamation with fugue; 'Surely he hath borne our griefs' shows his expressive chromaticism." },
-    { work: "Concerti grossi, Op. 6, HWV 319–330", note: "Short slow movements ending on Phrygian cadences, set between energetic ritornello movements." },
-    { work: "Zadok the Priest, HWV 258", note: "A long string build-up over repeated harmonies before the choir's massive homophonic entry." },
+    {
+      work: "Messiah, HWV 56",
+      note: "Choruses alternate block-chord declamation with fugue; 'Surely he hath borne our griefs' shows his expressive chromaticism.",
+    },
+    {
+      work: "Concerti grossi, Op. 6, HWV 319–330",
+      note: "Short slow movements ending on Phrygian cadences, set between energetic ritornello movements.",
+    },
+    {
+      work: "Zadok the Priest, HWV 258",
+      note: "A long string build-up over repeated harmonies before the choir's massive homophonic entry.",
+    },
   ],
 };

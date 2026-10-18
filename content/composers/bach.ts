@@ -93,8 +93,17 @@ V:B clef=bass
     },
   ],
   listening: [
-    { work: "Well-Tempered Clavier, Book I", note: "Preludes show pure harmonic progression; fugues show counterpoint generating harmony." },
-    { work: "St Matthew Passion, BWV 244", note: "The 'Passion chorale' harmonized several different ways." },
-    { work: "Chaconne from Partita No. 2 for solo violin, BWV 1004", note: "A complete harmonic world implied by one melodic instrument." },
+    {
+      work: "Well-Tempered Clavier, Book I",
+      note: "Preludes show pure harmonic progression; fugues show counterpoint generating harmony.",
+    },
+    {
+      work: "St Matthew Passion, BWV 244",
+      note: "The 'Passion chorale' harmonized several different ways.",
+    },
+    {
+      work: "Chaconne from Partita No. 2 for solo violin, BWV 1004",
+      note: "A complete harmonic world implied by one melodic instrument.",
+    },
   ],
 };

@@ -59,7 +59,8 @@ V:B clef=bass
     },
     {
       title: "Sudden shift to ♭VI",
-      source: "Third-related key motion, as heard throughout the middle-period works",
+      source:
+        "Third-related key motion, as heard throughout the middle-period works",
       kind: "illustration",
       abc: `X:1
 M:4/4
@@ -93,8 +94,17 @@ V:B clef=bass
     },
   ],
   listening: [
-    { work: "Piano Sonata No. 8 'Pathétique', Op. 13", note: "Grave introduction full of diminished sevenths." },
-    { work: "Piano Sonata No. 23 'Appassionata', Op. 57", note: "Neapolitan relationships drive the whole first movement." },
-    { work: "Symphony No. 5, Op. 67", note: "The long dominant build-up linking the third and fourth movements." },
+    {
+      work: "Piano Sonata No. 8 'Pathétique', Op. 13",
+      note: "Grave introduction full of diminished sevenths.",
+    },
+    {
+      work: "Piano Sonata No. 23 'Appassionata', Op. 57",
+      note: "Neapolitan relationships drive the whole first movement.",
+    },
+    {
+      work: "Symphony No. 5, Op. 67",
+      note: "The long dominant build-up linking the third and fourth movements.",
+    },
   ],
 };

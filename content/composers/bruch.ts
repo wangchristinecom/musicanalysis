@@ -42,7 +42,8 @@ export const bruch: Composer = {
   examples: [
     {
       title: "Singing line over a tonic pedal",
-      source: "In the key and manner of the Adagio from Violin Concerto No. 1, Op. 26 (E♭ major)",
+      source:
+        "In the key and manner of the Adagio from Violin Concerto No. 1, Op. 26 (E♭ major)",
       kind: "illustration",
       abc: `X:1
 M:4/4
@@ -76,8 +77,17 @@ V:B clef=bass
     },
   ],
   listening: [
-    { work: "Violin Concerto No. 1 in G minor, Op. 26", note: "The Adagio is a model of long-breathed melody over slow harmony." },
-    { work: "Kol Nidrei, Op. 47", note: "Cello and orchestra; a traditional melody set with restrained harmony." },
-    { work: "Scottish Fantasy, Op. 46", note: "Folk melodies treated with Romantic orchestral warmth." },
+    {
+      work: "Violin Concerto No. 1 in G minor, Op. 26",
+      note: "The Adagio is a model of long-breathed melody over slow harmony.",
+    },
+    {
+      work: "Kol Nidrei, Op. 47",
+      note: "Cello and orchestra; a traditional melody set with restrained harmony.",
+    },
+    {
+      work: "Scottish Fantasy, Op. 46",
+      note: "Folk melodies treated with Romantic orchestral warmth.",
+    },
   ],
 };

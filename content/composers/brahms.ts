@@ -93,8 +93,17 @@ V:B clef=bass
     },
   ],
   listening: [
-    { work: "Symphony No. 3 in F major, Op. 90", note: "The F–A♭–F motto and major/minor conflict." },
-    { work: "Ein deutsches Requiem, Op. 45", note: "Plagal cadences and modal mixture in the choral writing." },
-    { work: "Intermezzo in A major, Op. 118 No. 2", note: "Dense inner voices and intimate harmonic colour." },
+    {
+      work: "Symphony No. 3 in F major, Op. 90",
+      note: "The F–A♭–F motto and major/minor conflict.",
+    },
+    {
+      work: "Ein deutsches Requiem, Op. 45",
+      note: "Plagal cadences and modal mixture in the choral writing.",
+    },
+    {
+      work: "Intermezzo in A major, Op. 118 No. 2",
+      note: "Dense inner voices and intimate harmonic colour.",
+    },
   ],
 };

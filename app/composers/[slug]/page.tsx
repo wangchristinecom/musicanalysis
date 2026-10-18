@@ -8,7 +8,9 @@ export function generateStaticParams() {
   return composers.map((composer) => ({ slug: composer.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps<"/composers/[slug]">): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps<"/composers/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   return { title: `${getComposer(slug)?.name} · Harmony Atlas` };
 }
@@ -19,7 +21,9 @@ const kindLabels = {
   illustration: "Style illustration",
 };
 
-export default async function ComposerPage({ params }: PageProps<"/composers/[slug]">) {
+export default async function ComposerPage({
+  params,
+}: PageProps<"/composers/[slug]">) {
   const { slug } = await params;
   const composer = getComposer(slug);
   if (!composer) notFound();
@@ -35,9 +39,16 @@ export default async function ComposerPage({ params }: PageProps<"/composers/[sl
       <h2 className="mt-12 font-serif text-3xl">Harmonic fingerprint</h2>
       <dl className="mt-4 grid gap-4 sm:grid-cols-2">
         {composer.signatureTraits.map((trait) => (
-          <div key={trait.dimension} className="rounded-xl border border-line bg-card p-4">
-            <dt className="text-sm font-semibold text-accent">{traitLabels[trait.dimension]}</dt>
-            <dd className="mt-1 text-sm leading-relaxed">{trait.description}</dd>
+          <div
+            key={trait.dimension}
+            className="rounded-xl border border-line bg-card p-4"
+          >
+            <dt className="text-sm font-semibold text-accent">
+              {traitLabels[trait.dimension]}
+            </dt>
+            <dd className="mt-1 text-sm leading-relaxed">
+              {trait.description}
+            </dd>
           </div>
         ))}
       </dl>
@@ -45,7 +56,10 @@ export default async function ComposerPage({ params }: PageProps<"/composers/[sl
       <h2 className="mt-12 font-serif text-3xl">Examples</h2>
       <div className="mt-4 space-y-8">
         {composer.examples.map((example) => (
-          <section key={example.title} className="rounded-xl border border-line p-5">
+          <section
+            key={example.title}
+            className="rounded-xl border border-line p-5"
+          >
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <h3 className="font-serif text-2xl">{example.title}</h3>
               <span className="rounded-full bg-card px-2.5 py-0.5 text-xs text-muted">
